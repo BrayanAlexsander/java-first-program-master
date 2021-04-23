@@ -11,11 +11,11 @@ public class BestLoanRates {
             3, 2.67f
     );
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name");
         String name = scanner.nextLine();
-        System.out.println( "Hello " +  name  );
+        System.out.println("Hello " +  name);
 
         System.out.println("Enter the loan term (in years)");
         int loanTermInYears = scanner.nextInt();
@@ -27,8 +27,8 @@ public class BestLoanRates {
         }
         scanner.close();
     }
-    public static float getRates(int loanTermInYears){
-        if(bestRates.containsKey(loanTermInYears)){
+    public static float getRates(int loanTermInYears) {
+        if(bestRates.containsKey(loanTermInYears)) {
             return bestRates.get(loanTermInYears);
 
         }
